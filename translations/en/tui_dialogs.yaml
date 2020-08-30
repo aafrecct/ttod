@@ -16,7 +16,7 @@ title:
     - "                                              game by @aafrecct"
 
 init_prompt: "(Press any key to start)"
-title_compact:
+compact_title:
     - "A beeg"
     - " ____ ____ __  __ ____ _   _ "
     - "(_  _(  _ (  )(  (_  _( )_( )"
@@ -34,13 +34,19 @@ main_menu:
     - "  [O] Options   "
     - "  [E] Exit      "
 
+player_menu:
+    - "  [A] Add     "
+    - "  [P] Pair    "
+    - "  [E] Edit    "
+    - "  [R] Remove  "
+    - "  [B] Begin   "
+
 question_menu:
     - "  [N] Next player        "
     - "  [C] Change question    "
     - "  [P] Get random player  "
     - "  [R] Get random number  "
     - "  [E] Exit               "
-
 choice_menu:
     - "  [T] Truth   "
     - "  [D] Dare    "

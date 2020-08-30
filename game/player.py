@@ -15,10 +15,10 @@ class Player():
         self.used_dares = []
         self.used_questions = []
 
-    def add_used(self, kind, index):
-        used_list = self.used_truths if kind == 'truth' else self.used_dares
+    def add_used(self, index):
+        used_list = self.used_truths if index < 184 else self.used_dares
         used_list.append(index)
         self.used_questions.append(index)
 
-    def is_used(self, index)
-        return index in used_questions
+    def is_used(self, index):
+        return index in self.used_questions

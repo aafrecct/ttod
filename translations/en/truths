@@ -35,7 +35,7 @@
 0034 When did you last go solo?
 0035 If I looked in your nightstand (or equivalent), what would I find?
 0036 What is your favorite piece of clothing and why?
-0037 You know $0, $2 has always wondered . . . ($2 fill in the blank)
+0037 You know {0}, {2} has always wondered . . . ({2} fill in the blank)
 0038 Are you where you thought you’d be 10 years ago?
 0039 If you could buy anything with $50, what would you get?
 0040 Have you ever fantasized about a teacher or an authority figure? Who and what was it?
@@ -87,17 +87,17 @@
 0086 What is the last video you watched on YouTube?
 0087 What’s something your mom doesn’t know about you?
 0088 What’s your worst fart story?
-0089 What did you think of $2 when you first met them?
+0089 What did you think of {2} when you first met them?
 0090 What did you want to be when you grew up when you were 6?
-0091 What is the dumbest thing $2’s ever said?
+0091 What is the dumbest thing {2}’s ever said?
 0092 When was your sexual awakening?
-0093 Best purchase that you’ve made for $10 or less?
+0093 Best purchase that you’ve made for {1}0 or less?
 0094 What was your first sexual experience?
 0095 What was your wildest sexual experience?
 0096 If I went through your room, what would I be surprised to find?
 0097 Your favorite place on your body to be kissed?
-0098 Who does $2 remind you of?
-0099 What’s something you would want $2 to do for you?
+0098 Who does {2} remind you of?
+0099 What’s something you would want {2} to do for you?
 0100 What’s the worst thought you’ve ever had?
 0101 What’s the best news you’ve ever heard?
 0102 What’s the worst thing you’ve ever done at work / college / -blank-?
@@ -112,7 +112,7 @@
 0111 Are you turned on right now?
 0112 Do you want to be tied up?
 0113 What is something that is absolutely off-limits in the bedroom?
-0114 If you were to give $2 full body massage, where would you start and where would you end?
+0114 If you were to give {2} full body massage, where would you start and where would you end?
 0115 What was your funniest sexual experience like?
 0116 Have you ever done it in a public place?
 0117 Who’s the ex you’d do again in a heartbeat?
@@ -127,7 +127,7 @@
 0126 Cartoon character that you have the biggest crush on?
 0127 Fill in the blank: If you really knew me, you would know . . .
 0128 Show me something you still have from >8 years ago? Why do you still have it?
-0129 What’s in your bedside drawer? 
+0129 What’s in your bedside drawer?$
 0130 Describe your package in detail, including what it likes, what it wants, and what it’s feeling.
 0131 What was your biggest sexual disappointment?
 0132 When were you sexually rejected?
@@ -166,21 +166,21 @@
 0164 Who here do you find most attractive?
 [COUPLES]
 0165 What’s your favorite body part on your partner?
-0166 Have you ever had an exciting dream about anyone other than $1?
-0167 Do you love $1? How much?
-0168 Where do you see your relationship with $1 going?
-0169 Do you like telling $1 what to do in bed, or do you prefer to be told what to do?
-0170 Do you try to feel $1 up when you hug?
-0171 Do you ever just want to tear $1's clothes?
-0172 Do you like to pull $1's hair?
-0173 Have you ever thought about $1 in the shower?
-0174 What is your favorite sexual memory of $1?
-0175 How has $1 changed since we started dating?
-0176 What do you love about $1 the most?
-0177 What sexual adventures do you want to go on with $1 in 30 years?
-0178 What’s something $1 has done that you didn’t expect?
-0179 If you could give $1 a nightclub dancer's name, what would it be?
-0180 When do you remember being attracted to $1 for the first time?
-0181 Have you ever wanted $1 to tie you up?
-0182 What’s the filthiest thing you’ve imagined doing to $1?
-0183 Have you ever cried because of $1?
+0166 Have you ever had an exciting dream about anyone other than {1}?
+0167 Do you love {1}? How much?
+0168 Where do you see your relationship with {1} going?
+0169 Do you like telling {1} what to do in bed, or do you prefer to be told what to do?
+0170 Do you try to feel {1} up when you hug?
+0171 Do you ever just want to tear {1}'s clothes?
+0172 Do you like to pull {1}'s hair?
+0173 Have you ever thought about {1} in the shower?
+0174 What is your favorite sexual memory of {1}?
+0175 How has {1} changed since we started dating?
+0176 What do you love about {1} the most?
+0177 What sexual adventures do you want to go on with {1} in 30 years?
+0178 What’s something {1} has done that you didn’t expect?
+0179 If you could give {1} a nightclub dancer's name, what would it be?
+0180 When do you remember being attracted to {1} for the first time?
+0181 Have you ever wanted {1} to tie you up?
+0182 What’s the filthiest thing you’ve imagined doing to {1}?
+0183 Have you ever cried because of {1}?

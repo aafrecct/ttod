@@ -1,5 +1,4 @@
 from random import randint, choice, shuffle
-:%s/^/\=printf('%-4d', line('.'))
 
 def read_questions(path):
     '''Returns a dictionary with the grouped questions in the given file.
@@ -7,17 +6,16 @@ def read_questions(path):
     Keyword arguments:
     path -- The path to the file containing the questions.
     '''
-    
+    questions = {}
     with open(path, 'r') as questionsfile:
-        questions = {}
         last_header = ""
         for line in questionsfile.readlines():
             l = line[:-1]
             if l[0] == '[':
-                last_header = l
-                questions[l] = []
+                last_header = l[1:-1].lower()
+                questions[last_header] = []
             else:
-                questions[last_header].append((int(l[:5]), l[5:))
+                questions[last_header].append((int(l[:5]), l[5:]))
 
     return questions
 
@@ -35,13 +33,13 @@ class TODGame():
     
     def __init__(self, players, language='en'):
         self.players = players
-        self.truths = read_questions('translations/{0}/truths'.format(language)
-        self.dares = read_questions('translations/{0}/dares'.format(language)
+        self.truths = read_questions('translations/{0}/truths'.format(language))
+        self.dares = read_questions('translations/{0}/dares'.format(language))
         self.round_counter = 0
         self.player_counter = -1
 
-    def change_player_order(self):
-        self.players = shuffle(self.players)
+    def shuffle_players(self):
+        shuffle(self.players)
     
     def get_random_player(self, player):
         return choice([p for p in self.players if p.name != player.name])
@@ -63,26 +61,30 @@ class TODGame():
         return pool
 
     def _random_norepeat_question(self, kind, player):
-        q_pool = _player_question_pool(kind, player)
+        q_pool = self._player_question_pool(kind, player)
         used_of_the_kind = {'truth':player.used_truths,
                             'dare':player.used_dares,
                             'both':player.used_questions}
-        max_questions = len(qpool) - len(used_of_the_kind[kind])
+        max_questions = len(q_pool) - len(used_of_the_kind[kind])
         question = q_pool[randint(0, max_questions - 1)]
         if player.is_used(question[0]):
             question = q_pool[max_questions + used_of_the_kind[kind].index(question[0]) - 1]
-        player.add_used(question[0]))
+        player.add_used(question[0])
         return question
 
-    def _question_tuple(self, player, question_str):
-        return (player.name, question_str, player.partner, get_random_player(player))
+    def _question_tuple(self, player, question):
+        return (player.name, question[1], player.partner, self.get_random_player(player).name)
         
-    def next_person(self, kind):
-        self.player_counter += 1 if self.player_counter < len(self.players) - 1 else (-len(self.players)+1)
+    def next_player(self):
+        if self.player_counter < (len(self.players) - 1):
+            self.player_counter += 1
+        else:
+            self.player_counter -= (len(self.players) - 1)
         player = self.players[self.player_counter]
-        question = _question_tuple(self, player, _random_norepeat_question(kind, player))
+        return player
 
-    def different_question(self, kind):
+    def ask_question(self, kind):
         player = self.players[self.player_counter]
-        question = _question_tuple(self, player, _random_norepeat_question(kind, player))
+        question = self._question_tuple(player, self._random_norepeat_question(kind, player))
+        return question
 

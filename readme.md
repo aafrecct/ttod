@@ -1,4 +1,4 @@
-![A beeg Truth or Dare game logo](./BTOD.svg)<img src="./BTOD.svg">
+![A beeg Truth or Dare game logo](./BTOD.svg)
 
 An extendable game of Truth or Dare with a curses interface, that started as a drunken joke with a group of friends.
 

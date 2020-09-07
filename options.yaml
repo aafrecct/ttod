@@ -1,4 +1,8 @@
 options:
-        language: "en"
-
+    # Language of the game:
+    language: "en"
+    # Save the list of players to last_players.yaml:
+    keep_players: False
+    # Change player order each round:
+    reorder_per_round: False
 

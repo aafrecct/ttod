@@ -104,7 +104,7 @@ all:
   - "Put on the national anthem and do your sexiest dance to it."
   - "Make out with {2}'s bellybutton."
   - "Read everyone the last conversation text you had."
-[SINGLE]
+single:
   - "Have someone blindfold you. Then, everyone in the group kisses you on the cheek, and you have to choose one person that you want to kiss on the lips and do so."
   - "You’re in school and you’ve been a bad student. For the next round, you’re in time out on {2}’s lap."
   - "Lightly trace your hands over {2}’s lips and whisper \"I’m coming, I’m coming...\" five times."
@@ -118,7 +118,7 @@ all:
   - "Give {2} a back massage without using your hands."
   - "Text your mom a picture of {2} and say, “Aren’t they great?”"
   - "Draw a picture of {2} and post it on Social Media, saying how much you love them."
-[COUPLES]
+couples:
   - "Have someone blindfold you. Then, everyone in the group kisses you on the cheek, and you have to say which one is {1}, and then kiss them on the lips."
   - "You’re in school and you’ve been a bad student. For the next round, you’re in time out on {1}’s lap."
   - "Lightly trace your hands over {1}’s lips and whisper \"I’m coming, I’m coming...\" five times."

@@ -86,6 +86,11 @@ class CursesTUI():
                 for max_len, str_len in [(self.h, str_h), (self._left_width(), str_w)])
         self._paint_string(y, x, s)
 
+    def paint_left_lower(self, s):
+        '''Takes a single string and adds it at the bottom of the left side of scr.'''
+        y, x = (self.h - 2, int((self.w - len(s)) / 2))
+        self._paint_string(y, x, s)
+
     def clear_left(self):
         '''Clears only the left side.'''
         self.paint_left([' ' * self._left_width() for i in range(self.h)])
@@ -239,9 +244,9 @@ class CursesTUI():
         return players
 
     def paint_choice_menu(self, player):
-        ''''''
+        '''Displays the menu to decide between Truth or Dare and returns the selected choice.'''
         self.paint_left(player.name)
-        return_list = ['truth', 'dare', 'both']
+        return_list = ['truth', 'dare', 'random']
         return return_list[self._manage_right_menu(self.dialogs['choice_menu'])]
 
     def _process_question(self, question):
@@ -319,22 +324,27 @@ def main(stdscr):
         exit = False
         o2 = 0
         kind = ''
+        player = None
 
         # Begin the game.
         while not exit:
             tui.clear()
             if o2 == 0:
+                # Next player:
                 player = game.next_player()
                 kind = tui.paint_choice_menu(player)
                 tui.clear()
                 tui.paint_question(game.ask_question(kind))
                 o2 = tui.paint_question_menu()
             elif o2 == 1:
+                # Change question:
                 tui.paint_question(game.ask_question(kind))
                 o2 = tui.paint_question_menu()
             elif o2 == 2:
+                # Print random player:
                 o2 = tui.paint_question_menu()
             elif o2 == 3:
+                # Print random number:
                 o2 = tui.paint_question_menu()
             else:
                 exit = True

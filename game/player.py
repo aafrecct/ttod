@@ -1,3 +1,5 @@
+from random import shuffle
+
 class Player():
     '''A model for a player in a truth or dare game.
 
@@ -8,17 +10,30 @@ class Player():
     used_dares  -- A list of the dare indexes that have been asked to the player.
     '''
     
-    def __init__(self, name, partner=None):
+    def __init__(self, name, partner=None, categories=set()):
         self.name = name
         self.partner = partner
-        self.used_truths = []
-        self.used_dares = []
-        self.used_questions = []
+        self.categories = {'all'} | categories
+        self.truth_order = []
+        self.dare_order = []
+        self.used_questions = {'truth': 0, 'dare': 0}
+    
+    def set_categories(self, categories = set()):
+        self.categories |= categories
 
-    def add_used(self, index):
-        used_list = self.used_truths if index < 184 else self.used_dares
-        used_list.append(index)
-        self.used_questions.append(index)
+    def create_orders(self, category_indexes):
+        ''' Randomizes the order of truths and dares for this player.'''
+        ti = category_indexes['truths']
+        di = category_indexes['dares']
+        for ctg in self.categories:
+            self.truth_order.extend(range(ti[ctg][0], ti[ctg][1]))
+            self.dare_order.extend(range(di[ctg][0], di[ctg][1]))
+        shuffle(self.truth_order)
+        shuffle(self.dare_order)
 
-    def is_used(self, index):
-        return index in self.used_questions
+    def kind_order(self, kind):
+        return self.truth_order if kind == 'truth' else self.dare_order
+
+    def add_used(self, kind):
+        ''' Adds one to the traker of questions that are already asked.'''
+        self.used_questions[kind] += 1

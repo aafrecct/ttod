@@ -20,57 +20,52 @@ class TODGame():
 
     Attributes:
     players        -- A list of objects of the Player class.
-    truths         -- A dictionary from the lines of the file 'truths.yaml'.
-    dares          -- A dictionary from the lines of the file 'dares.yaml'.
+    questions      -- A dictionary from the lines of the files 'truths.yaml' and 'dares.yaml'.
     round_counter  -- A counter of the number of rounds since the beginning.
     player_counter -- A counter indicating the player's whose turn it is.
     '''
     
     def __init__(self, players, language='en'):
-        self.players = players
-        self.questions = read_questions('translations/{0}'.format(language))
+        self.players = players 
+        # Initial read of questions.
+        self.questions = {'truths':[], 'dares':[]}
+        questions = read_questions('translations/{0}'.format(language))
+        category_indexes = {'truths':{}, 'dares':{}} # A dictionary containing the start and end indexes of categories.
+        for kind, value in questions.items():
+            globalindex = 0
+            for ctg, questionlist in value.items():
+                self.questions[kind].extend(questionlist) # Add all truths to a common list, and dares to a different one.
+                category_indexes[kind][ctg] = (globalindex, globalindex + len(questionlist) - 1)
+                globalindex += len(questionlist)
+        for plyr in self.players:
+            plyr.create_orders(category_indexes)
         self.round_counter = 0
-        self.player_counter = -1
+        self.player_counter = -1    # Begins at -1 so first player is 0.
 
     def shuffle_players(self):
+        '''Reorder the players in game randomly'''
         shuffle(self.players)
     
-    def get_random_player(self, player):
-        return choice([p for p in self.players if p.name != player.name])
+    def get_random_player(self, player = None):
+        '''Returns a random player in the game that is not the player given.'''
+        lst = [p for p in self.players if p.name != player.name] if player is not None else self.players
+        return choice(lst)
 
     def is_truth(self, question):
+        '''Returns if the provided question is a 'truth' or not (is a 'dare')'''
         b = False
         for lst in self.questions['truths'].values():
             b = b or question in lst
         return b
 
-    def player_question_pool(self, kind, player):
-        if kind == 'truth':
-            pool_d = self.questions['truths']
-        elif kind == 'dare':
-            pool_d = self.questions['dares']
-        else:
-            pool_d = {}
-            for key in self.questions['truths'].keys():
-                pool_d[key] = self.truths[key] + self.dares[key]
-        pool = pool_d['all']
-        pool += pool_d['single'] if player.partner is None else pool_d['couples']
-        return pool
-
     def _random_norep_question(self, kind, player):
-        q_pool = self.player_question_pool(kind, player)
-        used_of_the_kind = {'truth': player.used_truths,
-                            'dare': player.used_dares,
-                            'both': player.used_questions}
-        max_questions = len(q_pool) - len(used_of_the_kind[kind])
-        question = q_pool[randint(0, max_questions - 1)]
-        if player.is_used(question[0]):
-            question = q_pool[max_questions + used_of_the_kind[kind].index(question[0]) - 1]
-        player.add_used(question[0])
+        kind = choice(['truth', 'dare']) if kind == 'random' else kind
+        question = self.questions[kind + 's'][player.kind_order(kind)[player.used_questions[kind]]] 
+        player.add_used(kind)
         return question
 
     def _question_tuple(self, player, question):
-        return (player.name, question[1], player.partner, self.get_random_player(player).name)
+        return (player.name, question, player.partner, self.get_random_player(player).name)
         
     def next_player(self):
         if self.player_counter < (len(self.players) - 1):

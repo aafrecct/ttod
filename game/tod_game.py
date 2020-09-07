@@ -51,6 +51,9 @@ class TODGame():
         lst = [p for p in self.players if p.name != player.name] if player is not None else self.players
         return choice(lst)
 
+    def get_random_number(self):
+        return randint(0, 10)
+
     def is_truth(self, question):
         '''Returns if the provided question is a 'truth' or not (is a 'dare')'''
         b = False

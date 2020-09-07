@@ -278,13 +278,21 @@ class CursesTUI():
     def paint_question_menu(self):
         return self._manage_right_menu(self.dialogs['question_menu'])
 
-    def paint_random_player(self):
-        player = self.current_game.get_random_player.name
-        x = int((_right_width() - len(player)) / 2)
-        _paint_string(self.h - 2, x, player)
+    def paint_player_below(self, player):
+        self._paint_string(self.h -2, 0, [" " * self._left_width()])
+        player = player.name
+        x = int((self._left_width() - len(player)) / 2)
+        self._paint_string(self.h - 2, x, [player])
 
-    def _print_random_number(self):
+    def paint_random_number(self, number):
+        self._paint_string(self.h -2, 0, [" " * self._left_width()])
+        x = int((self._left_width() - 2) / 2)
+        self._paint_string(self.h - 2, x, [str(number)])
+
+    def paint_options_menu(self):
         pass
+
+
 
 
 # The game options are loaded.
@@ -328,25 +336,32 @@ def main(stdscr):
 
         # Begin the game.
         while not exit:
-            tui.clear()
             if o2 == 0:
                 # Next player:
+                tui.clear()
                 player = game.next_player()
                 kind = tui.paint_choice_menu(player)
                 tui.clear()
                 tui.paint_question(game.ask_question(kind))
-                o2 = tui.paint_question_menu()
             elif o2 == 1:
                 # Change question:
+                tui.clear()
                 tui.paint_question(game.ask_question(kind))
-                o2 = tui.paint_question_menu()
             elif o2 == 2:
                 # Print random player:
-                o2 = tui.paint_question_menu()
+                tui.paint_player_below(game.get_random_player(player))
             elif o2 == 3:
                 # Print random number:
-                o2 = tui.paint_question_menu()
+                tui.paint_random_number(game.get_random_number())
             else:
                 exit = True
+            o2 = tui.paint_question_menu()
+    elif o1 == 1:
+        tui.clear()
+        back = False
+        while not back:
+            tui.paint_options_menu()
+            back = True
+
 
 crs.wrapper(main)

@@ -15,7 +15,7 @@ title:
     - "                                        |___//_/ \\_\\|_|_\\|____|"
     - "                                              game by @aafrecct"
 
-init_prompt: "(Press any key to start)"
+init_prompt: "(Pulsa cualquier tecla para continuar)"
 compact_title:
     - "A terrible"
     - " ____ ____ __  __ ____ _   _ "
@@ -30,25 +30,25 @@ compact_title:
     - "(____(__)(__(_)\\_(____)  game"
     - "                 by @aafrecct"
 main_menu:
-    - "  [N] New Game  "
-    - "  [O] Options   "
-    - "  [E] Exit      "
+    - "  [N] Nuevo juego  "
+    - "  [O] Opciones     "
+    - "  [S] Salir        "
 
 player_menu:
-    - "  [A] Add     "
-    - "  [P] Pair    "
-    - "  [E] Edit    "
-    - "  [R] Remove  "
-    - "  [B] Begin   "
+    - "  [A] Añadir     "
+    - "  [P] Emparejar  "
+    - "  [E] Editar     "
+    - "  [Q] Quitar     "
+    - "  [C] Comenzar   "
 
 question_menu:
-    - "  [N] Next player        "
-    - "  [C] Change question    "
-    - "  [P] Get random player  "
-    - "  [R] Get random number  "
-    - "  [E] Exit               "
+    - "  [S] Siguiente          "
+    - "  [C] Cambiar Pregunta   "
+    - "  [J] Jugador Aleatorio  "
+    - "  [N] Número Aleratorio  "
+    - "  [X] Salir               "
 choice_menu:
-    - "  [T] Truth   "
-    - "  [D] Dare    "
-    - "  [R] Random  "
+    - "  [V] Verdad      "
+    - "  [R] Reto        "
+    - "  [A] Aleratorio  "
 

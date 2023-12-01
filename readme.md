@@ -1,6 +1,6 @@
-![A beeg Truth or Dare game logo](./BTOD.svg)
+![Terminal Truth or Dare game logo](./TTOD.svg)
 
-An extendable game of Truth or Dare with a curses interface, that started as a drunken joke with a group of friends.
+An extendable game of Truth or Dare with a terminal user interface, that started as a drunken joke with a group of friends.
 TTOD used to mean 'Terminal Truth or Dare' but all titles say 'Terrible Truth o Dare' because I have memory problems.
 
 # Use:

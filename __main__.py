@@ -1,1 +1,1 @@
-import curses_tui
+import game.curses_tui

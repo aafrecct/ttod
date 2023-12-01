@@ -1,0 +1,26 @@
+options:
+    data_path: "data"
+    # Filename of the questionset to use:
+    question_set: "en"
+    # Save the list of players to last_players.yaml:
+    save_players: False
+    # Change player order each round:
+    reorder_each_round: False
+    # Players can NOT answer the same question:
+    shared_question_list: False
+    # Spice:
+    #   1 - cold: Nothing to see here, nobody reasonable will be offended.
+    #   2 - mild: Some light sexual innuendos.
+    #   3 - warm: Kisses, mentions of past relationships, and heavier sexual innuendos.
+    #   4 - hot:  Licks, nudity, kink stuff and the potential for jealousy.
+    #   5 - fire: No promises made.
+    # Minimum spice
+    min_spice: 1
+    # Maximum spice
+    max_spice: 5
+    # Movement:
+    #   1 - still: You can play from your couch
+    #   2 - move: You might have to stand up and do stuff
+    #   3 - outside: Some dares involve leaving the house
+    max_movement: 3
+

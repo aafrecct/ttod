@@ -1,0 +1,54 @@
+title: |
+    A terminal
+     _______ ____  _   _ _______ _   _
+    |__   __|  _ \\| | | |__   __| |_| |
+       | |  |    /| | | |( | |  |  _  |
+       | |  | |\\ \\| | | |_)| |  | | | )
+       )_|  |_| \\ \\____ /  |_|  /(   (_)
+      (_)        )(   (_)      (__)  _____ ____         (
+                (__)                (  _  (  _ \\  (     )\\  )
+                                     )(_)( )   /  )\\ )  ( )/( (
+                                    (_____(_)\\_) (  /(  / (_ ))\\
+                                             __  ( (_ )( __)_( _)_
+                                            |   \\ \\/_\\(_| _ \\| __|
+                                            | |) |/ _ \\ |   /| _|_
+                                            |___//_/ \\_\\|_|_\\|____|
+                                                  game by @aafrecct
+
+init_prompt: "(Press any key to start)"
+compact_title: |
+    A terminal
+     ____ ____ __  __ ____ _   _ 
+    (_  _(  _ (  )(  (_  _( )_( )
+      )(  )   /)(__)(  )(  ) _ ( 
+    (____(__\\_(______)(__)(_) (_)
+    (  _  (  _ \\  
+     )(_)( )   /               
+    (_____(__\\_) ____ ____ 
+    (  _ \\ /__\\ (  _ ( ___) 
+     )(_) /(__)\\ )   /)__) 
+    (____(__)(__(_)\\_(____)  game
+                     by @aafrecct
+main_menu:
+    - "New Game"
+    - "Options"
+    - "Exit"
+
+player_menu:
+    - "Add"
+    - "Pair"
+    - "Edit"
+    - "Remove"
+    - "Begin"
+
+question_menu:
+    - "Next player"
+    - "Change question"
+    - "Get random player"
+    - "Get random number"
+    - "Exit"
+choice_menu:
+    - "Truth"
+    - "Dare"
+    - "Random"
+

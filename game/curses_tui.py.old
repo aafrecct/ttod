@@ -1,9 +1,11 @@
-import curses as crs
+import curses
 from yaml import safe_load, dump
+from textwrap import wrap
 from game.player import Player
 from game.tod_game import TODGame
 
-class CursesTUI():
+
+class CursesTUI:
     """A class to display the game of Truth or Dare.
     Generally it divides the main screen in two sections:
         - A right side taking 65% of the width to display the questions
@@ -18,75 +20,64 @@ class CursesTUI():
         stdscr  -- A curses screen covering the screen.
         dialogs -- A dictionary corresponding to the file 'tui_dialogs' in a language.
     """
-    
-    def __init__(self, stdscr, dialogs):
-        self.scr = stdscr    # The main screen.
-        self.h, self.w = self.scr.getmaxyx()    # The dimensions of the screen.
-        self.dialogs = dialogs    # Dialogs and menus.
-    
+
+    class TextBox:
+
+        def __init__(self, text, bound=0):
+            if isinstance(text, str):
+                self.lines = [text] if not bound else wrap(text, bound-2)
+            elif isinstance(text, list):
+                self.lines = text
+            self.width = max(map(len, self.lines))
+            self.height = len(self.lines)
+
+    def __init__(self, screen, dialogs):
+        self.screen = screen
+        self.dialogs = dialogs
+        self.height, self.width = self.screen.getmaxyx()
+        self.left_width = int(13 / 20 * self.width)
+        self.right_width = self.width - self.left_width
+
+        self.screen.border("░")
+        curses.use_default_colors()
+        curses.curs_set(0)
+
     def clear(self):
-        '''Clears the screen'''
-        self.scr.clear()
+        """Clears the screen"""
+        self.screen.clear()
 
-    def _left_width(self):
-        '''Returns the width of the right panel'''
-        return int(13 / 20 * self.w)
+    def divide_screen():
+        self.left_screen = curses.newwin(self.height, self.left_width)
+        self.right_screen = curses.newwin(self.height, self.right_width, 0,
+                                          self.left_width)
 
-    def _right_width(self):
-        '''Returns the width of the left panel'''
-        return self.w - self._left_width()
-    
-    def _paint_string(self, y, x, s):
-        '''Takes a list of strings and adds it to the window given.
+    def center_rectangle(self, window, height, width):
+        """Calculates the coordinates of the top left corner for
+        a rectangle of the size given to be centered in the screen"""
+        window_height, window_width = window.getmaxyx()
+        y = int((window_height - height) / 2)
+        x = int((window_width - width) / 2)
+        return y, x
 
-        Arguments:
-        y   -- The y coordinate.
-        x   -- The x coordinate.
-        s   -- The list of strings.
-        '''
-        # How many lines the string has.
-        str_h = len(s)
-        # How many characters the lonest line has.
-        ns = sorted(s.copy(), key=len)
-        str_w = len(ns[-1])
+    def paint_text(self, window, y, x, textbox):
         # Print string.
-        for i in range(len(s)):
-            self.scr.addstr(y + i, x, s[i])
-
+        for i, line in enumerate(textbox.lines):
+            window.addstr(y + i, x, line)
 
     def paint_main_title(self):
-        '''Takes a list of strings and adds it centered in win.'''
         # How many lines the string has.
-        s = self.dialogs['title']
-        str_h = len(s)
-        # How many characters the lonest line has.
-        ns = sorted(s.copy(), key=len)
-        str_w = len(ns[-1])
+        titlecard = self.TextBox(self.dialogs['title'])
         # Set begin and end of string.
-        y, x = (int((max_len - str_len) / 2) 
-                for max_len, str_len in [(self.h, str_h), (self.w, str_w)])
-        self._paint_string(y, x, s)
-    
-    def paint_left(self, s):
-        '''Takes a list of strings and adds it in the left side of scr.
-        It splits the width of scr with a 13:7 ratio.
-    
-        Arguments:
-        s -- The list of strings to add.
-        '''
-        if type(s) == str:
-            s = [s]
-        # How many lines the string has.
-        str_h = len(s)
-        # How many characters the lonest line has.
-        ns = sorted(s.copy(), key=len)
-        str_w = len(ns[-1])
-        # Set begin and end of string.
-        y, x = (int((max_len - str_len) / 2) 
-                for max_len, str_len in [(self.h, str_h), (self._left_width(), str_w)])
-        self._paint_string(y, x, s)
+        y, x = self.center_rectangle(self.screen, titlecard.height, titlecard.width)
+        self.paint_text(self.screen, y, x, titlecard)
 
-    def paint_left_lower(self, s):
+    def paint_left(self, textbox):
+        # Set begin and end of string.
+        y, x = self.center_rectangle(self.left_screen, textbox.height,
+                                textbox.width)
+        self._paint_string(y, x, textbox.lines)
+
+    def paint_left_lower(self, string):
         '''Takes a single string and adds it at the bottom of the left side of scr.'''
         y, x = (self.h - 2, int((self.w - len(s)) / 2))
         self._paint_string(y, x, s)
@@ -103,21 +94,24 @@ class CursesTUI():
         s               -- The list of strings to add.
         '''
         # How many lines the string has.
+
         str_h = len(s)
         # How many characters the lonest line has.
         ns = sorted(s.copy(), key=len)
         str_w = len(ns[-1])
         # Set begin and end of string.
-        y, x = (int((max_len - str_len) / 2) 
-                for max_len, str_len in [(self.h, str_h), (self._right_width(), str_w)])
+        y, x = (int((max_len - str_len) / 2)
+                for max_len, str_len in [(self.h,
+                                          str_h), (self._right_width(),
+                                                   str_w)])
         self._paint_string(y, x + self._left_width(), s)
-    
+
     def clear_right(self):
         '''Clears only the right side.'''
         self.paint_right(['' * self._right_width() for i in range(self.h)])
 
     @staticmethod
-    def _select_option(menu, selected_option = 0):
+    def _select_option(menu, selected_option=0):
         '''Adds '> ... <' marks to the selected_option in a list of strings.'''
         for i in range(len(menu)):
             if i == selected_option:
@@ -125,7 +119,7 @@ class CursesTUI():
             else:
                 menu[i] = "  " + menu[i][2:-2] + "  "
         return menu
-    
+
     def _manage_right_menu(self, menu):
         '''A function to manage the options of the menu on the left.
         It returns the index of the selected option.
@@ -137,7 +131,7 @@ class CursesTUI():
         pressed_key = None
         selection_keys = [o[o.index('[') + 1].lower() for o in menu]
         selection_keys.append('\n')
-        
+
         while pressed_key not in selection_keys:
             if pressed_key == 'KEY_DOWN':
                 selected_option += 1 if selected_option < len(menu) - 1 else 0
@@ -146,19 +140,19 @@ class CursesTUI():
             self.paint_right(self._select_option(menu, selected_option))
             self.scr.refresh()
             pressed_key = self.scr.getkey()
-        
+
         if pressed_key == '\n':
             return selected_option
         else:
             return selection_keys.index(pressed_key)
-    
+
     def paint_main_menu(self):
         '''Paints the smaller title on the right and
         returns the selected option in the main menu.'''
         self.paint_left(self.dialogs['compact_title'])
         return self._manage_right_menu(self.dialogs['main_menu'])
-    
-    def _handle_typing(self, shadow_str = '', initial_str = ''):
+
+    def _handle_typing(self, shadow_str='', initial_str=''):
         '''Returns the word typed on the left side of the screen.'''
         # Store the typed string:
         typed = initial_str
@@ -185,7 +179,7 @@ class CursesTUI():
         player_name = self._handle_typing('Start typing a name')
         player = Player(player_name)
         return player
-    
+
     def _pair_players(self):
         first = self._handle_typing('Type the index of first player')
         second = self._handle_typing('Type the index of second player')
@@ -202,7 +196,7 @@ class CursesTUI():
 
     def _del_player(self):
         return self._handle_typing('Type the index of player to delete')
-    
+
     def paint_player_menu(self):
         '''Paints the screen to add the players to a new game.
         Returns the list of players.'''
@@ -223,7 +217,8 @@ class CursesTUI():
                 partners = self._pair_players()
                 if partners[0] in li and partners[1] in li:
                     i, j = int(partners[0]), int(partners[1])
-                    players[i].partner, players[j].partner = players[j], players[i]
+                    players[i].partner, players[j].partner = players[
+                        j], players[i]
             elif option == 2:
                 # Edit the player.name attribute of the selected player.
                 p = self._edit_player(players)
@@ -233,25 +228,32 @@ class CursesTUI():
                 # Remove the selcted player from the list of players.
                 li = [str(i) for i in range(len(players))]
                 p = self._del_player()
-                if p in li: 
+                if p in li:
                     players.pop(int(p))
 
             self.clear_left()
             # Add an indicator of the partners of each player.
-            print_partners = [" ( ♡ " + p.partner.name + " )" if p.partner is not None else '' for p in players]
+            print_partners = [
+                " ( ♡ " + p.partner.name +
+                " )" if p.partner is not None else '' for p in players
+            ]
             # Paint the full list of players.
-            self.paint_left([str(i) + ") " + players[i].name + print_partners[i] for i in range(len(players))])
+            self.paint_left([
+                str(i) + ") " + players[i].name + print_partners[i]
+                for i in range(len(players))
+            ])
         return players
 
     def paint_choice_menu(self, player):
         '''Displays the menu to decide between Truth or Dare and returns the selected choice.'''
         self.paint_left(player.name)
         return_list = ['truth', 'dare', 'random']
-        return return_list[self._manage_right_menu(self.dialogs['choice_menu'])]
+        return return_list[self._manage_right_menu(
+            self.dialogs['choice_menu'])]
 
     def _process_question(self, question):
         '''Returns a list of strings representing the question given so that:
-            - It fits on the right side.
+            - It fits on the left side.
             - The names are printed with the question.
         Arguments:
             question -- A tuple of the form (player, question, player, player)
@@ -267,8 +269,8 @@ class CursesTUI():
             l = [question[0] + ':']
             while len(remain) > max_len:
                 split = remain.rfind(' ', 0, max_len)
-                l.append(remain[0 : split])
-                remain = remain[split + 1 :]
+                l.append(remain[0:split])
+                remain = remain[split + 1:]
             l.append(remain)
             return l
 
@@ -279,13 +281,13 @@ class CursesTUI():
         return self._manage_right_menu(self.dialogs['question_menu'])
 
     def paint_player_below(self, player):
-        self._paint_string(self.h -2, 0, [" " * self._left_width()])
+        self._paint_string(self.h - 2, 0, [" " * self._left_width()])
         player = player.name
         x = int((self._left_width() - len(player)) / 2)
         self._paint_string(self.h - 2, x, [player])
 
     def paint_random_number(self, number):
-        self._paint_string(self.h -2, 0, [" " * self._left_width()])
+        self._paint_string(self.h - 2, 0, [" " * self._left_width()])
         x = int((self._left_width() - 2) / 2)
         self._paint_string(self.h - 2, x, [str(number)])
 
@@ -293,22 +295,20 @@ class CursesTUI():
         pass
 
 
-
-
 # The game options are loaded.
 with open('options.yaml', 'r') as options_file:
     options = safe_load(options_file)['options']
 
 # The dialogs are opened in the language specified by the options.
-with open('./translations/{0}/tui_dialogs.yaml'.format(options['language']), 'r') as dialogs_file:
+with open('data/question_sets/{0}/tui_dialogs.yaml'.format(options['question_set']),
+          'r') as dialogs_file:
     dialogs = safe_load(dialogs_file)
 
 
 def main(stdscr):
     # A TUI class is instaciated and given the dialogs file.
     tui = CursesTUI(stdscr, dialogs)
-    crs.curs_set(0)
-    if tui.w < 68:
+    if tui.width < 68:
         raise Exception('Screen width too small.')
 
     # Paint the main title until a key is pressed.
@@ -364,4 +364,4 @@ def main(stdscr):
             back = True
 
 
-crs.wrapper(main)
+curses.wrapper(main)

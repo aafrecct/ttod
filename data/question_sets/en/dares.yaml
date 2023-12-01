@@ -1,0 +1,716 @@
+- question: "Do your best fake “O” while looking {partner} in the eye."
+  category: "all"
+  spice:    2 # mild
+  movement: 1 # still
+
+- question: "With your eyes closed and the rest of (willing) participants standing across from you
+             in the room, walk with your hands out. You have to kiss the first person you touch, 
+             where you touch them."
+  category: "single"
+  spice:    3 # warm
+  movement: 2 # move
+
+- question: "You have to leave an R-rated voicemail for an ex."
+  category: "single"
+  spice:    3 # warm
+  movement: 1 # still
+
+- question: "{partner} has to lick peanut butter, chocolate sauce, or whipped cream off your finger,
+             cheek, or somewhere of their choice."
+  category: "all"
+  spice:    4 # hot
+  movement: 2 # move
+
+- question: "{partner} feeds you M&Ms or other small chocolate candy and you have to say, \"Thank 
+             you, Daddy!\" after each one."
+  category: "all"
+  spice:    4 # hot
+  movement: 2 # move
+
+- question: "If there’s a pool, you have to go skinny dipping, and you have to choose one buddy to 
+             go with you."
+  category: "all"
+  spice:    4 # hot
+  movement: 3 # outside
+
+- question: "{partner} goes onto your Amazon account and buys a special toy for you that’s $20 or 
+             less."
+  category: "all"
+  spice:    4 # hot
+  movement: 1 # still
+
+- question: "Talk to your hand like you’re making a game plan to sleep with someone else who is in 
+             the room."
+  category: "all"
+  spice:    3 # warm
+  movement: 1 # still
+
+- question: "Lay down on the ground and have {random} pretend like they’re using chalk to draw an 
+             outline of your body."
+  category: "all"
+  spice:    2 # mild
+  movement: 2 # move
+
+- question: "Go to Cosmopolitan’s website’s love section and find a position you’ve never heard of.
+             Then, try to act it out with {partner}"
+  category: "all"
+  spice:    3 # warm
+  movement: 2 # move
+
+- question: "You leave the room. Everyone willing pours a shot. You come back into the room and 
+             take one of the shots that was poured. Whoever poured the drink, you have to sit on 
+             their lap for the rest of the round. (People can take the other shots)."
+  category: "single"
+  spice:    3 # warm
+  movement: 2 # move
+
+- question: "You have to undress down to your accessories and underwear. If you want to keep any 
+             clothes on, you have to take a shot for every piece of clothing you want to keep."
+  category: "all"
+  spice:    4 # hot
+  movement: 1 # still
+
+- question: "Tweet 'I’m coming... I’m coming...' Then, one minute later, tweet 'I just came.'"
+  category: "all"
+  spice:    2 # mild
+  movement: 1 # still
+
+- question: "Put on a swimming suit and have someone rub sunscreen on your back. Wear the suit for 
+             the rest of the game."
+  category: "all"
+  spice:    4 # hot
+  movement: 2 # move
+
+- question: "{partner} gives you a back massage for one minute (or a random amount) while you’re 
+             blindfolded."
+  category: "all"
+  spice:    3 # warm
+  movement: 2 # move
+
+- question: "You have to keep your hand on the very inner thigh of {partner} for the next round."
+  category: "all"
+  spice:    3 # warm
+  movement: 1 # still
+
+- question: "Let {random} go through your YouTube history and read it out to the group."
+  category: "all"
+  spice:    1 # cold
+  movement: 1 # still
+
+- question: "Let {random} go through your Amazon purchase history and read it out to the group."
+  category: "all"
+  spice:    1 # cold
+  movement: 1 # still
+
+- question: "Be blindfolded and then tickled for a minute by {partner}."
+  category: "all"
+  spice:    2 # mild
+  movement: 2 # move
+
+- question: "Spell out a secret message for {partner} on their back. If they get it right, they get
+             a special favor of their choosing. If they get it wrong, they have to do something 
+             special for you."
+  category: "all"
+  spice:    2 # mild
+  movement: 1 # still
+
+- question: "Go streaking around the block. (This is illegal, so be careful!)"
+  category: "all"
+  spice:    5 # fire
+  movement: 3 # outside
+
+- question: "You have to do a one-person re-enactment of Romeo and Juliet using only animal sounds 
+             for the dialogue."
+  category: "all"
+  spice:    1 # cold
+  movement: 1 # still
+
+- question: "Sing your countries anthem in a British accent while hula hooping."
+  category: "all"
+  spice:    1 # cold
+  movement: 1 # still
+
+- question: "Do a sexy dance for {partner}, but you can only use one leg."
+  category: "all"
+  spice:    2 # mild
+  movement: 2 # move
+
+- question: "{partner} has to ride you like a cowboy and you have to buck like a broncho."
+  category: "all"
+  spice:    3 # warm
+  movement: 2 # move
+
+- question: "You have to wear handcuffs for the rest of the game."
+  category: "all"
+  spice:    3 # warm
+  movement: 2 # move
+
+- question: "Take a body shot from {partner}."
+  category: "all"
+  spice:    3 # warm
+  movement: 2 # move
+
+- question: "Remove your bra without taking off your shirt. (If you're male, have everyone think of
+             an equivalent)"
+  category: "all"
+  spice:    4 # hot
+  movement: 1 # still
+
+- question: "You have to do whatever {partner} tells you for one minute."
+  category: "all"
+  spice:    3 # warm
+  movement: 1 # still
+
+- question: "Let {partner} do whatever they want for two minutes with your phone."
+  category: "all"
+  spice:    3 # warm
+  movement: 1 # still
+
+- question: "Take a picture of your orgasm face. You have to use that as your lock screen for 48 
+             hours."
+  category: "all"
+  spice:    3 # warm
+  movement: 1 # still
+
+- question: "Give a cooking demonstration of 'How to Make Cereal' completely in the buff (that 
+             means naked)."
+  category: "all"
+  spice:    5 # fire
+  movement: 2 # move
+
+- question: "Find an old photograph and recreate it as closely as possible."
+  category: "all"
+  spice:    1 # cold
+  movement: 2 # move
+
+- question: "{partner} gets to ask you three questions that have to do with your knowledge of them.
+             If you get them right, you get a special reward. If you get them wrong, you get a 
+             special punishment."
+  category: "all"
+  spice:    3 # warm
+  movement: 1 # still
+
+- question: "Lick whipped cream off {partner}'s stomach."
+  category: "all"
+  spice:    4 # hot
+  movement: "move"
+
+- question: "Go skinny dipping for three minutes."
+  category: "all"
+  spice:    4 # hot
+  movement: 3 # outside
+
+- question: "Give a detailed presentation on how you woo a lover in the style of a TED talk."
+  category: "all"
+  spice:    2 # mild
+  movement: 1 # still
+
+- question: "Give your privates a name and then give a stream of consciousness speech talking as 
+             it."
+  category: "all"
+  spice:    2 # mild
+  movement: 1 # still
+
+- question: "Imitate the sounds of both sides of your most recent romantic encounter."
+  category: "all"
+  spice:    2 # mild
+  movement: 1 # still
+
+- question: "Try to hit on {partner} like you’re at a bar."
+  category: "all"
+  spice:    3 # warm
+  movement: 1 # still
+
+- question: "Make as many different sounds with your lips as you can."
+  category: "all"
+  spice:    1 # cold
+  movement: 1 # still
+
+- question: "Make as many different fart sounds as you can."
+  category: "all"
+  spice:    1 # cold
+  movement: 1 # still
+
+- question: "You have to say “I’m just a silly boy / girl / -blank-” and slap yourself gently on 
+             the face 20 times."
+  category: "all"
+  spice:    2 # mild
+  movement: 1 # still
+
+- question: "Go hide somewhere in the house until the next round starts. No one is going to come 
+             find you, but you must remain hidden."
+  category: "all"
+  spice:    1 # cold
+  movement: 2 # move
+
+- question: "Cook two bags of popcorn. Eat all of it as fast as you can, but in the sexiest way 
+             possible."
+  category: "all"   
+  spice:    2 # mild
+  movement: 2 # move
+
+- question: "Take off your shirt and pants, lay down on the ground, and act like a dolphin that’s 
+             gotten stranded on land for one minute."
+  category: "all"
+  spice:    4 # hot
+  movement: 2 # move
+
+- question: "Pretend like you’re making sweet, sweet, love to the couch for one and a half 
+             minutes."
+  category: "all"
+  spice:    3 # warm
+  movement: 2 # move
+
+- question: "Pick up a random book and read it in the most seductive voice you can manage."
+  category: "all"
+  spice:    2 # mild
+  movement: 1 # still
+
+- question: "Demonstrate to the room how to put a condom on using a banana."
+  category: "all"
+  spice:    3 # warm
+  movement: 2 # move
+
+- question: "Put in your headphones and put on your favorite song and dance to it."
+  category: "all"
+  spice:    1 # cold
+  movement: 2 # move
+
+- question: "Someone gets to draw something on your face (with just a pen, not a permanent 
+             marker)."
+  category: "all"
+  spice:    1 # cold
+  movement: 2 # move
+
+- question: "You have to hold a mouthful of water in your mouth until the round is over."
+  category: "all"
+  spice:    1 # cold
+  movement: 2 # move
+
+- question: "Slap your butt and say “I’ve been bad, bad, bad, bad, bad, bad, bad, bad, bad, 
+             naughty!”"
+  category: "all" 
+  spice:    2 # mild
+  movement: 1 # still
+
+- question: "Put on a dance song and grind with a pillow for one minute."
+  category: "all"
+  spice:    2 # mild
+  movement: 2 # move
+
+- question: "Feed {partner} almonds (or an alternative) using just your mouth."
+  category: "all"
+  spice:    3 # warm
+  movement: 2 # move
+
+- question: "Send a video of you singing in the shower (without the water on!)"
+  category: "all"
+  spice:    2 # mild
+  movement: 2 # move
+
+- question: "Send a video of you showing every part of your naked body except for... you know 
+             what."
+  category: "all"
+  spice:    5 # fire
+  movement: 2 # move
+
+- question: "Tweet “Feeling lonely...”"
+  category: "all"
+  spice:    1 # cold
+  movement: 1 # still
+
+- question: "Send {partner} the dirtiest text you can think of."
+  category: "all"
+  spice:    2 # mild
+  movement: 1 # still
+
+- question: "Send a dirty message in emojis that {partner} has to decode."
+  category: "all"
+  spice:    2 # mild
+  movement: 1 # still
+
+- question: "Write a haiku."
+  category: "all"
+  spice:    1 # cold
+  movement: 1 # still
+
+- question: "Send / Show the most unflattering picture of you that you have in your phone."
+  category: "all"
+  spice:    1 # cold
+  movement: 1 # still
+
+- question: "Send / Show the picture in your phone that’s five pictures back."
+  category: "all"
+  spice:    2 # mild
+  movement: 1 # still
+
+- question: "Write a 100-word naughty story and send it / read it out loud."
+  category: "all"
+  spice:    2 # mild
+  movement: 1 # still
+
+- question: "Remove one piece of clothing every time you get a (non-text) notification on your 
+             phone for five rounds."
+  category: "all"
+  spice:    2 # mild
+  movement: 1 # still
+
+- question: "Take off your pants."
+  category: "all"
+  spice:    4 # hot
+  movement: 1 # still
+
+- question: "Show the least sexy part of your body."
+  category: "all"
+  spice:    3 # warm
+  movement: 1 # still
+
+- question: "Show the sexiest part of your body in the least sexy way."
+  category: "all"
+  spice:    4 # hot
+  movement: 1 # still
+
+- question: "Draw the best picture of {random} naked that you can."
+  category: "all"
+  spice:    2 # mild
+  movement: 1 # still
+
+- question: "Do 12 swimsuit calendar poses. (Dressed)"
+  category: "all"
+  spice:    3 # warm
+  movement: 2 # move
+
+- question: "Take the sexiest selfie you can."
+  category: "all"
+  spice:    2 # mild
+  movement: 1 # still
+
+- question: "{random} gets to choose your profile picture on Twitter / IG / other for at least 48h."
+  category: "all"
+  spice:    2 # mild
+  movement: 1 # still
+
+- question: "Demonstrate your best sexual technique using your hands."
+  category: "all"
+  spice:    3 # warm
+  movement: 1 # still
+
+- question: "Slap yourself."
+  category: "all"
+  spice:    1 # cold
+  movement: 1 # still
+
+- question: "{random} orders some food item online and whatever it is, you have to eat the whole 
+             thing in five minutes."
+  category: "all"
+  spice:    1 # cold
+  movement: 2 # move
+
+- question: "You have one minute to change into the hottest outfit you have."
+  category: "all"
+  spice:    3 # warm
+  movement: 2 # move
+
+- question: "Show three of your favorite moles. Or, if you don’t have any moles, three of your 
+             favorite skin colorations on your body."
+  category: "all"
+  spice:    2 # mild
+  movement: 1 # still
+
+- question: "Sing an opera song."
+  category: "all"
+  spice:    1 # cold
+  movement: 1 # still
+
+- question: "Take off three items of clothing."
+  category: "all"
+  spice:    4 # hot
+  movement: 2 # move
+
+- question: "Draw a mustache on your face."
+  category: "all"
+  spice:    1 # cold
+  movement: 2 # move
+
+- question: "Cut off a little bit of your hair"
+  category: "all"
+  spice:    1 # cold
+  movement: 2 # move
+
+- question: "Record and post a video of you on Instagram holding your tongue and saying, “I am a 
+             very pretty hippopotamus.”"
+  category: "all"
+  spice:    1 # cold
+  movement: 1 # still
+
+- question: "Continue the rest of the game with your biggest pair of underwear on your head."
+  category: "all"
+  spice:    2 # mild
+  movement: 2 # move
+
+- question: "Take off everything above your waist and put on only a winter jacket instead."
+  category: "all"
+  spice:    4 # hot
+  movement: 2 # move
+
+- question: "Go to the fridge, pick out two different items, and use them to act out your favorite 
+             sexual act."
+  category: "all"
+  spice:    3 # warm
+  movement: 2 # move
+
+- question: "Have {random} quiz you on basic math questions while you watch a one-minute clip of 
+             something hot."
+  category: "all"
+  spice:    3 # warm
+  movement: 1 # still
+
+- question: "Try to re-create a famous kissing scene from a movie like The Notebook, Never Been 
+             Kissed, etc. but you’re just kissing the air."
+  category: "all"
+  spice:    2 # mild
+  movement: 2 # move
+
+- question: "Use provocative hand gestures every time you talk for three rounds."
+  category: "all"
+  spice:    2 # mild
+  movement: 1 # still
+
+- question: "Read a 'colorful' excerpt from a romance novel."
+  category: "all"
+  spice:    2 # mild
+  movement: 1 # still
+
+- question: "{random} chooses a random video off of YouTube, and you have to dirty dance to it 
+             (no matter what it is)."
+  category: "all"
+  spice:    2 # mild
+  movement: 2 # move
+
+- question: "Until the next round, you have to try to talk like Yoda."
+  category: "all"
+  spice:    1 # cold
+  movement: 1 # still
+
+- question: "Demonstrate your best technique on a banana or a zucchini."
+  category: "all"
+  spice:    3 # warm
+  movement: 2 # move
+
+- question: "Remove an article of clothing each round for a random amount of rounds or until you're
+             in your underwear."
+  category: "all"
+  spice:    4 # hot
+  movement: 1 # still
+
+- question: "Try to juggle three potatoes."
+  category: "all"
+  spice:    1 # cold
+  movement: 2 # move
+
+- question: "Put a pair of pantyhose on your head and skip around the block singing 
+             “La la la la la la.”"
+  category: "all"
+  spice:    2 # mild
+  movement: 3 # outside
+
+- question: "Do a 1-minute freestyle rap with a bunch of marshmallows in your mouth (be careful 
+             not to choke!)"
+  category: "all"
+  spice:    1 # cold
+  movement: 2 # move
+
+- question: "Put on a swimming suit and clean the oven. (Like, actually clean it)."
+  category: "all"
+  spice:    3 # warm
+  movement: 2 # move
+
+- question: "Let someone else get on one of your online dating profiles and use it for 3 minutes to 
+             do whatever they want."
+  category: "single"
+  spice:    3 # warm
+  movement: 1 # still
+
+- question: "You have to drink one cup of smoothie made out of ice cubes, water, and three other 
+             ingredients that someone else gets to choose."
+  category: "all"
+  spice:    1 # cold
+  movement: 2 # move
+
+- question: "Make a sandwich with your hands tied behind your back and eat it."
+  category: "all"
+  spice:    2 # mild
+  movement: 2 # move
+
+- question: "Eat one tablespoon of coffee grounds while saying “Mmmmm, very yummy!”"
+  category: "all"
+  spice:    1 # cold
+  movement: 2 # move
+
+- question: "Prank call someone at work / college / -blank- and tell them you’ve always loved them 
+             (you can use something to disguise your number)."
+  category: "all"
+  spice:    2 # mild
+  movement: 1 # still
+
+- question: "Put on the national anthem and do your sexiest dance to it."
+  category: "all"
+  spice:    2 # mild
+  movement: 2 # move
+
+- question: "Make out with {partner}'s bellybutton."
+  category: "all"
+  spice:    3 # warm
+  movement: 2 # move
+
+- question: "Read everyone the last conversation text you had."
+  category: "all"
+  spice:    2 # mild
+  movement: 1 # still
+
+- question: "You’re in school and you’ve been a bad student. For the next round, you’re in time 
+             out on {partner}’s lap."
+  category: "all"
+  spice:    3 # warm
+  movement: 2 # move
+
+- question: "Lightly trace your hands over {partner}’s lips and whisper 'I’m coming, I’m coming...' 
+             five times."
+  category: "all"
+  spice:    3 # warm
+  movement: 2 # move
+
+- question: "You have to wash your {partner}'s feet."
+  category: "all"
+  spice:    3 # warm
+  movement: 2 # move
+
+- question: "Get within one inch of {partner}, look them straight in the eye, and tell them how you
+             feel about them for one minute. Do not touch them."
+  category: "all"
+  spice:    2 # mild
+  movement: 2 # move
+
+- question: "Blow on the back of {partner}'s neck, alternating hot and cool for one minute. 
+             Do not touch them."
+  category: "all"
+  spice:    2 # mild
+  movement: 1 # still
+
+- question: "Beg {partner} to make out with you. They have to refuse. Keep trying to convince them 
+             in different ways for two minutes."
+  category: "all"
+  spice:    2 # mild
+  movement: 1 # still
+
+- question: "Take a lewd picture with {partner}."
+  category: "all"
+  spice:    4 # hot
+  movement: 2 # move
+
+- question: "Tease {partner} for a minute."
+  category: "all"
+  spice:    3 # warm
+  movement: 2 # move
+
+- question: "Give {partner} a lap dance."
+  category: "all"
+  spice:    4 # hot
+  movement: 2 # move
+
+- question: "Give {partner} a back massage without using your hands."
+  category: "all"
+  spice:    3 # warm
+  movement: 2 # move
+
+- question: "Draw a picture of {partner} and post it on Social Media, saying how much you love 
+             them."
+  category: "couple"
+  spice:    1 # cold
+  movement: 1 # still
+
+- question: "Have someone blindfold you. Then, everyone in the group kisses you on the cheek, and 
+             then kiss whoever you think is {partner} on the lips."
+  category: "single"
+  spice:    3 # warm
+  movement: 2 # move
+
+- question: "Turn off the lights and try to turn {partner} on only using sounds."
+  category: "all"
+  spice:    4 # hot
+  movement: 2 # move
+
+- question: "You get to dress {random} up, using your clothes (underwear not included). 
+             Then take a picture."
+  category: "all"
+  spice:    2 # mild
+  movement: 2 # move
+    
+- question: "You have to call one of {partner}’s parents and tell them how much you love 
+             {partner}."
+  category: "all"
+  spice:    1 # cold
+  movement: 1 # still
+
+- question: "Trade clothes with {partner}."
+  category: "all"
+  spice:    2 # mild
+  movement: 2 # move
+
+- question: "Make out with {partner}."
+  category: "all"
+  spice:    3 # warm
+  movement: 1 # still
+
+- question: "Take off {partner}'s shirt with only your teeth."
+  category: "all"
+  spice:    4 # hot
+  movement: 2 # move
+
+- question: "Do a shot for every time you forgot a special occasion related to {partner} (Birthday,
+             Aniversary, etc.). If you want, you can opt to lose a piece of clothing instead of 
+             doing a shot."
+  category: "all"
+  spice:    3 # warm
+  movement: 1 # still
+
+- question: "You have to say to {partner}, “Daddy/Mommy I’ve been a really bad girl/boy. I think I 
+             need a spanking.” If they refuse to give it to you, you have to beg for it."
+  category: "all"
+  spice:    4 # hot
+  movement: 2 # move
+
+- question: "Kiss {partner} somewhere new each round for the rest of the game."
+  category: "all"
+  spice:    3 # warm
+  movement: 2 # move
+
+- question: "Send {partner} a picture of you in your birthday suit."
+  category: "couple"
+  spice:    4 # hot
+  movement: 2 # move
+
+- question: "Take a R-rated picture with {partner}."
+  category: "couple"
+  spice:    4 # hot
+  movement: 2 # move
+
+- question: "Kiss {partner} passionately, like in the movies."
+  category: "all"
+  spice:    4 # hot
+  movement: 2 # move
+
+- question: "Massage {partner}'s neck with your mouth."
+  category: "all"
+  spice:    4 # hot
+  movement: 2 # move
+
+- question: "Act out how you remember your first date with {partner}."
+  category: "couple"
+  spice:    2 # mild
+  movement: 2 # move
+
+- question: "Text your mom a picture of {partner} and say, “Aren’t they great?”"
+  category: "all"
+  spice:    2 # mild
+  movement: 1 # still

@@ -1,0 +1,717 @@
+- question: "If you got to have a threesome with people in this room, who would you do it with and why?"
+  category: "single"
+  spice:    3 # warm
+
+- question: "Have you ever sexted anyone? If so, read one of the sexts in a fake British accent."
+  category: "all"
+  spice:    3 # warm
+
+- question: "What is the most adventurous thing you’d want someone to do to you?"
+  category: "all"
+  spice:    4 # hot
+
+- question: "What is the song that you get it on to the most?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Where are you on the straight / queer spectrum? Be honest!"
+  category: "all"
+  spice:    1 # cold
+
+- question: "What’s your favorite fantasy to pleasure yourself to?"
+  category: "all"
+  spice:    4 # hot
+
+- question: "Where is the weirdest place that you’ve ever masturbated?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "What is your favorite 'special' toy, if you have one? If not, what's the weirdest 
+             stand-in you've used?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "When was the first time you came?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Who was your best partner and why?"
+  category: "single"
+  spice:    2 # mild
+
+- question: "When was your first kiss?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "Do you have an “I’m getting laid tonight” outfit? What it is?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "What’s your favorite body part on yourself?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "Have you ever cheated?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Have you ever wanted to cheat?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "How many people have you slept with?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "Who’s the hottest person at work / college / -blank-?"
+  category: "single"
+  spice:    2 # mild
+
+- question: "Who here are you most jealous of?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "How many partners have you had?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "How many people have you kissed?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "When was a time you were so turned on you couldn’t stand it?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "How many times a week do you touch yourself?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "Have you ever done it at work / college / -blank-?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "Do you like telling your partner(s) what to do in bed, or do you prefer to be told 
+             what to do?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "What is the most you’ve done for sex in the past?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "What’s the most number of times you’ve done it in one day?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "Most you’ve touched yourself in one day?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "Have you ever done it while other people were around without them knowing?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "Do you like a lot of foreplay (more than 'just a bit')? What kind?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "What is one thing that gets you hot and bothered every time?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "Have you ever just wanted to tear someone's clothes no matter the consequences?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "How often do you watch something naughty?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Do you enjoy it kisses on your neck?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "When did you last touch yourself?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "If I looked in your nightstand (or equivalent), what would I find?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "What is your favorite piece of clothing and why?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "You know {player}, {random} has always wondered . . . ({random} fill in the blank)"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Are you where you thought you’d be 10 years ago?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "If you could buy anything with $50, what would you get?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "Have you ever fantasized about a teacher or an authority figure? Who and what was it?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "Ever put something weird in your body (not weird food)?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "When did you watch adults-only videos for the first time?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "When do you remember being attracted to another person for the first time?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "What’s the worst kiss you’ve ever been given?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "What is the most fun you’ve ever had in a romantic setting?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "What’s something romantic you’ve done that you’re most proud of?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "What’s your favorite body part on a person of the opposite sex?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Have you ever had a wardrobe malfunction?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Most embarrassing crush you’ve ever had?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "What was it like going down on someone the first time?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "Have you ever faked it? When? Can you re-create it?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "How do you like the taste when you go down on someone?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "What’s the hookup you regret the most?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "What’s the most embarrassing thing you’ve done in a relationship?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "How often do you trim down there?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "Have you ever considered a threesome?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "Have you ever had a one night stand?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "What’s the most embarrassing thing that turns you on?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "When did you lose your virginity?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Do you have any interesting fetishes?"
+  category: "all"
+  spice:    4 # hot
+
+- question: "Have you ever been to a strip club?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "What was the most powerful sexual experience you’ve ever had?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "Most embarrassing time you got turned on?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Have you ever been attracted to the same sex?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "What’s your self-love strategy? How do you get it on?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "Have you ever given or received a lap dance?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "What is your wildest fantasy?"
+  category: "all"
+  spice:    4 # hot
+
+- question: "If you were into the same sex, which celebrity would you go for?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "Ever wanted to try on the opposite sex’s clothing?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "What is the dumbest thing you’ve ever done?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "Strangest off-limits crush?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "Last time you cried?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "Have you ever made someone cry?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "One on one or the more the merrier?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "What is the craziest thing you’ve ever watched?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "What is one thing you’ve never done in the bedroom?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "Have you ever done it in a car?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Have you ever given or been given ‘attention’ while driving a car?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "When it comes to lingerie or equivalent, is less best, or leave something to unwrap?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Are second rounds exciting or exhausting?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Have you ever role played?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "What’s the worst lie you’ve ever told?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "What’s your worst substance story (getting drunk, high, etc.)?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Do you have any spicy pictures or videos saved on your phone?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "How many people have seen you naked?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "What is the last video you watched on YouTube?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "What’s something your mom doesn’t know about you?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "What’s your worst fart story?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "What did you think of {random} when you first met them?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "What did you want to be when you grew up when you were 6?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "What is the dumbest thing {random}’s ever said?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "When was your sexual awakening?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Best purchase that you’ve made for 20$ or less?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "What was your first sexual experience?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "What was your wildest sexual experience?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "If I went through your room, what would I be surprised to find?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Your favorite place on your body to be kissed?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Who does {random} remind you of?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "What’s something you would want {partner} to do for you?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "What’s the worst thought you’ve ever had?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "What’s the best news you’ve ever heard?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "What’s the worst thing you’ve ever done at work / college / -blank-?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Who’s your favorite family member?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "What is your favorite possession?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "What’s your biggest insecurity?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "What are you thinking about?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "What’s been on your mind lately?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "What are you afraid of?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "Who’s the one that got away?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Have you ever dyed your hair?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "Are you turned on right now?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Do you want to be tied up?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "What is something that is absolutely off-limits in the bedroom?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "If you were to give {partner} full body massage, where would you start and where 
+             would you end?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "What was your funniest sexual experience like?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "Have you ever done it in a public place?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "Who’s the ex you’d do again in a heartbeat?"
+  category: "single"
+  spice:    3 # warm
+
+- question: "Hottest thing someone’s ever done to you?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "Do you have a hot cousin?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Do you think your parents are hot?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Who (or what) was the love of your life? (So far?)"
+  category: "single"
+  spice:    1 # cold
+
+- question: "When was the last time you got really angry?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "What is your favorite plant and why?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "What’s something you would die if your mom found out about?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "What is something you did that you feel really guilty about?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "Cartoon character that you have the biggest crush on?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "Fill in the blank: If you really knew me, you would know . . ."
+  category: "all"
+  spice:    1 # cold
+
+- question: "Show me something you still have from >8 years ago? Why do you still have it?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "What was your biggest sexual disappointment?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "Have you been sexually rejected?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Funniest mishap while doing it?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "Do you have a name for your special places?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Have you ever kissed someone of the same gender?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "Have you ever slept with someone of the same gender?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Do you own any adult toys?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "Have you ever flashed someone?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "Have you ever taken a body shot?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "How long do you last?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Have you ever sexted someone?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Have you ever thought about sleeping with anyone here?"
+  category: "single"
+  spice:    3 # warm
+
+- question: "Have you ever pictured anyone here naked when talking to them?"
+  category: "single"
+  spice:    3 # warm
+
+- question: "Do you ever smell your toes?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "How often do you pick your nose?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "What’s the grossest thing that you do when you’re alone?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "What’s the strangest game you used to play as a kid?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "What were you doing one year ago today?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "Who’s the most boring person here?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "Something you wish you didn’t know?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "Who do you most want to sleep with, out of everyone here?"
+  category: "single"
+  spice:    3 # warm
+
+- question: "Who here is the least likely to do anything with their life?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "What would you name your children?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "What’s the lamest thing you’ve Googled?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "Reveal a secret thought that you’ve had about someone in the group."
+  category: "all"
+  spice:    2 # mild
+
+- question: "Did you ever dislike anyone in this group?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "Have you ever done anything illegal (besides the obvious like speeding, having a sip 
+             of alcohol when you were underage, etc.)?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Last time you pooped or peed your pants?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Have you ever had an exciting dream about anyone here?"
+  category: "single"
+  spice:    3 # warm
+
+- question: "Have you ever had a crush on anyone here? How big?"
+  category: "single"
+  spice:    2 # mild
+
+- question: "Would you take a shower with anyone here?"
+  category: "single"
+  spice:    3 # warm
+
+- question: "What is your favorite sexual memory?"
+  category: "all"
+  spice:    3 # warm
+
+- question: "Have you kissed anyone in this room?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "Who here do you find most attractive?"
+  category: "single"
+  spice:    2 # mild
+
+- question: "What’s your favorite body part on {partner}?"
+  category: "couple"
+  spice:    3 # warm
+
+- question: "Have you ever had an exciting dream about anyone other than {partner}?"
+  category: "couple"
+  spice:    4 # hot
+
+- question: "Do you love {partner}? How much?"
+  category: "single"
+  spice:    2 # mild
+
+- question: "Where do you see your relationship with {partner} going?"
+  category: "couple"
+  spice:    2 # mild
+
+- question: "Do you like telling {partner} what to do in bed, or do you prefer to be told what to 
+             do?"
+  category: "couple"
+  spice:    3 # warm
+
+- question: "Do you try to feel {partner} up when you hug?"
+  category: "couple"
+  spice:    2 # mild
+
+- question: "Do you like to pull {partner}'s hair?"
+  category: "couple"
+  spice:    3 # warm
+
+- question: "What is your favorite sexual memory with {partner}?"
+  category: "couple"
+  spice:    3 # warm
+
+- question: "How has {partner} changed since you started dating?"
+  category: "couple"
+  spice:    1 # cold
+
+- question: "What do you like about {random} the most?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "What’s something {random} has done that you didn’t expect?"
+  category: "all"
+  spice:    2 # mild
+
+- question: "If you could give {random} a nightclub dancer's name, what would it be?"
+  category: "all"
+  spice:    1 # cold
+
+- question: "When do you remember being attracted to {partner} for the first time?"
+  category: "couple"
+  spice:    1 # cold
+
+- question: "Have you ever wanted {partner} to tie you up?"
+  category: "couple"
+  spice:    3 # warm
+
+- question: "What’s the filthiest thing you’ve imagined doing to {partner}?"
+  category: "couple"
+  spice:    4 # hot
+
+- question: "Have you ever cried because of {partner}?"
+  category: "couple"
+  spice:    1 # cold
+

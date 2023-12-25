@@ -1,5 +1,6 @@
 from random import randint, choice, shuffle
 from loader import load_questions
+from copy import copy
 
 class Question:
 
@@ -9,6 +10,10 @@ class Question:
         self.category = category
         self.spice = spice
         self.movement = movement
+
+
+
+
 
 class TODGame:
     """This class handles the number of players and picking random questions.
@@ -34,13 +39,28 @@ class TODGame:
         self.players = players
         self.single_players = list(filter(lambda p: not p.partner, players))
         self.raw_questions = load_questions()
+        self.shared_question_list = shared_question_list
         if shared_question_list:
-            self.questions = self.__filtered_questions(self.raw_questions)
+            self.questions = self.__process_questions(self.raw_questions)
         else:
-            self.questions = 
+            ques
+            self.questions = {player: self.__process_questions(self.raw_questions, player) 
+                              for player in players}
         self.reorder_each_round
         self.round_counter = 0
         self.player_counter = 0
+    
+    def __process_questions(self, raw_questions):
+        questions = {}
+        for kind, kind_questions in raw_questions:
+            questions[kind] = {}
+            for question in kind_questions:
+                question = Question(**question, kind=kind)
+                
+                if question.category not in questions[kind]:
+                    questions[kind][question.category] = {}
+                    
+                
 
     def shuffle_players(self):
         """Reorder the players in game randomly"""
@@ -61,6 +81,9 @@ class TODGame:
 
     def get_random_number(self, bound=5):
         return randint(0, 5)
+
+    def get_questions(self, player):
+        if self.
 
     def random_non_repeating_question(self, kind, player):
         """ Returns a random question that the player has not answered before"""
